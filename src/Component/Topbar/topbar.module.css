@@ -1,0 +1,14 @@
+.head {
+  background-color: black;
+  background-image: url("https://thumbs.dreamstime.com/b/paper-planner-sticky-notes-blue-pastel-background-top-view-monthly-weekly-copy-space-153488617.jpg");
+  background-position: bottom;
+  padding: 25px;
+}
+
+.head p {
+  font-size: 38px;
+  color: Black;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: red;
+}

@@ -1,0 +1,51 @@
+.bottom {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+      25deg,
+      rgba(148, 93, 56, 0.83) 50%,
+      rgba(201, 156, 130, 0.473) 100%
+    ),
+    url("https://echo360.com/wp-content/uploads/2018/08/iStock-916563360.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bottom button {
+  width: 35%;
+  border: none;
+}
+.leftDiv {
+  width: 50%;
+  padding: 50px;
+  padding-top: 30px;
+  padding-left: 80px;
+  box-sizing: border-box;
+  text-align: left;
+  border-right: 5px solid white;
+}
+.leftDiv h1 {
+  color: lightgreen;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.rightDiv {
+  width: 50%;
+  padding: 50px;
+  padding-top: 30px;
+  padding-left: 80px;
+  box-sizing: border-box;
+  text-align: left;
+  padding-bottom: 30px;
+  padding-left: 80px;
+}
+.rightDiv h1 {
+  color: red;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
+.leftDiv form > label,
+.rightDiv form > label {
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+}

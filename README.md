@@ -1,5 +1,11 @@
 # Live Site Link - https://calander-event-manager.netlify.app/
 
+Steps to run :-
+1. Pull the repository in your local system.
+2. Open command prompt and navigate to project directory.
+3. Run command "npm install" which will install all the dependencies.
+4. After that run command "npm start" which will start the app.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

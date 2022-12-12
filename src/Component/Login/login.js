@@ -31,7 +31,7 @@ function Login(props) {
       return;
     }
     e.preventDefault();
-    await fetch("https://calendar-backend-api.herokuapp.com/login", {
+    await fetch("https://calendar-app-backend-fedx.onrender.com/login", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -64,7 +64,7 @@ function Login(props) {
       alert("Fields cannot be empty!!");
       return;
     }
-    await fetch("https://calendar-backend-api.herokuapp.com/user/add", {
+    await fetch("https://calendar-app-backend-fedx.onrender.com/user/add", {
       method: "POST",
       headers: {
         Accept: "application/json",

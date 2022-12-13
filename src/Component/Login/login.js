@@ -21,7 +21,7 @@ function Login(props) {
     } else {
       setLoad(true);
     }
-  }, []);
+  }, [props]);
 
   /* Handle Login Event */
   const onSubmitLogin = async (e) => {

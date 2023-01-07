@@ -23,7 +23,7 @@ function FullCalendarApp(props) {
     if (!uId) {
       uId = localStorage.getItem("userId");
     }
-    fetch(`https://calendar-backend-api.herokuapp.com/events/${uId}`)
+    fetch(`https://calendar-app-backend-fedx.onrender.com/events/${uId}`)
       .then((res) => res.json())
       .then((result) => {
         setEventsData(result);
@@ -61,7 +61,6 @@ function FullCalendarApp(props) {
     setEdit(true);
     var index = -1;
     for (var i = 0; i < eventsData.length; i++) {
-      console.log(eventsData[i].id, e.event.id);
       if (parseInt(eventsData[i].id) === parseInt(e.event.id)) {
         index = i;
       }
@@ -92,7 +91,7 @@ function FullCalendarApp(props) {
         body: JSON.stringify(eventUpdated),
       };
       await fetch(
-        "https://calendar-backend-api.herokuapp.com/event/update",
+        "https://calendar-app-backend-fedx.onrender.com/event/update",
         requestOptions
       )
         .then((response) => response.json())
@@ -106,7 +105,7 @@ function FullCalendarApp(props) {
         end: end.toISOString(),
         id: new Date().getTime(),
       };
-      await fetch("https://calendar-backend-api.herokuapp.com/event/add", {
+      await fetch("https://calendar-app-backend-fedx.onrender.com/event/add", {
         method: "POST",
         headers: {
           Accept: "application/json",

@@ -1,6 +1,11 @@
-.bottom {
+.bottom{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+}
+.mainDiv {
   display: flex;
-  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
       25deg,
       rgba(148, 93, 56, 0.83) 50%,
@@ -9,8 +14,9 @@
     url("https://echo360.com/wp-content/uploads/2018/08/iStock-916563360.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 87vh;
 }
-.bottom button {
+.mainDiv button {
   width: 35%;
   border: none;
 }
@@ -36,7 +42,6 @@
   box-sizing: border-box;
   text-align: left;
   padding-bottom: 30px;
-  padding-left: 80px;
 }
 .rightDiv h1 {
   color: red;
